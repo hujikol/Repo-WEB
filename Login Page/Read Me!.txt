@@ -1,0 +1,4 @@
+pada table 'users' dalam database 'hujikol'
+pastikan panjang nilai pasword 255 agar tidak terjadi error dalam login
+karena saat registrasi password akan di hash menggunakan salt yg berbeda pada setiap akun
+walau password sama
