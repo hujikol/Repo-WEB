@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicholas Nanda</title>
+        <meta charset="utf-8">
+        <style>
+            @keyframes topFadeOut{
+                0% {
+                    position: absolute;
+                    top: 5%;
+                    opacity: 0;
+                }
+                100% {
+                    position: absolute;
+                    top: 10%;
+                    opacity: 1;
+                }
+            }
+            @keyframes rightFadeInOut{
+                0% {
+                    position: absolute;
+                    left: 40px;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    left: 70px;
+                }
+            }
+            body{
+                background-color: #333533;
+                font-family: Roboto, stack-sans, sans-serif;
+                backface-visibility: hidden;
+                color: #CFDBD5;
+            }         
+            h1#intro-tag{
+                position: fixed;
+                right: 60px;
+                top: 10%;
+                font-family: arial;
+                text-align: right;
+                font-weight: 200;
+                animation-name: topFadeOut;
+                animation-duration: 2s;
+            }
+            div#social-media{
+                position: absolute;
+                left: 70px;
+                bottom: 8%;
+                font-size: 14px;
+                font-family: "Roboto Mono", stack-mono, monospace;
+                animation-name: rightFadeInOut;
+                animation-duration: 2s;
+                
+            }
+            a#intro-nama:link, a#intro-nama:visited, a#intro-nama:active
+            {
+                color: #F5CB5C;
+                text-decoration: none;
+                border-bottom: 1px dotted;
+            }
+            a#intro-nama:hover{
+                color: #E8EDDF;
+            }
+            a.social-media:link, a.social-media:visited, a.social-media:active
+            {
+                color: #CFDBD5;
+                text-decoration: none;
+            }
+            a.social-media:hover{
+                color: #F5CB5C;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="intro-tag">Halo, namaku <a id="intro-nama" href="#">Nicholas Nanda Sulakana</a>,
+            <br>mahasiswa Informatika di salah satu
+            <br>Universitas Kota Yogyakarta</h1>
+        <div id="social-media">
+            <a class="social-media" target="_blank" href="https://github.com/hujikol">Github</a><br><br>
+            <a class="social-media" target="_blank" href="https://www.instagram.com/nicholas_nanda">Instagram</a><br><br>
+            <a class="social-media" target="_blank" href="https://wa.me/6281332187818?text=%22Pesan%20ini%20dibuat%20dari%20web%20portofolio%22">WhatsApp</a><br><br>
+        </div>
+    </body>
+</html>

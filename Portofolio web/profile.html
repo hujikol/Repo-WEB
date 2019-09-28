@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicholas Nanda</title>
+        <meta charset="utf-8">
+        <style>
+            @keyframes rightFadeInOut{
+                0% {
+                    position: absolute;
+                    left: 40px;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    left: 70px;
+                }
+            }
+            body{
+                background-color: #333533;
+                font-family: Roboto, stack-sans, sans-serif;
+                backface-visibility: hidden;
+                color: #CFDBD5;
+            }         
+            div#social-media{
+                position: absolute;
+                left: 70px;
+                bottom: 8%;
+                font-size: 14px;
+                font-family: "Roboto Mono", stack-mono, monospace;
+                animation-name: rightFadeInOut;
+                animation-duration: 2s;
+                
+            }
+            a.social-media:link, a.social-media:visited, a.social-media:active
+            {
+                color: #CFDBD5;
+                text-decoration: none;
+            }
+            a.social-media:hover{
+                color: #F5CB5C;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="social-media">
+            <a class="social-media" target="_blank" href="https://github.com/hujikol">Github</a><br><br>
+            <a class="social-media" target="_blank" href="https://www.instagram.com/nicholas_nanda">Instagram</a><br><br>
+            <a class="social-media" target="_blank" href="https://wa.me/6281332187818?text=%22Pesan%20ini%20dibuat%20dari%20web%20portofolio%22">WhatsApp</a><br><br>
+        </div>
+    </body>
+</html>
